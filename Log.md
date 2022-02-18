@@ -10,3 +10,4 @@
 
 10:45 - 12:00 continue video at 1.75 speed as it goes through basic programming with kotlin (variable types, template literals, if else statements, while loops, and when loops(similar to switch statements))
 
+12:00 - 1:00 Lunch break
