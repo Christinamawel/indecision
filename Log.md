@@ -13,3 +13,5 @@
 12:00 - 1:00 Lunch break
 
 1:00 - 2:00 continued video at fast speed learning about functions then studied a new subject, nullables, in kotlin
+
+2:00 - 3:00 continued video at normal speed learning about classes in kotlin
