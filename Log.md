@@ -7,3 +7,6 @@
 10:00 - 10:45 create first app using kotlin (counts number of clicks on a button)
 
 ![appImage](./log-img-1.png)
+
+10:45 - 12:00 continue video at 1.75 speed as it goes through basic programming with kotlin (variable types, template literals, if else statements, while loops, and when loops(similar to switch statements))
+
