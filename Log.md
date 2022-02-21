@@ -1,5 +1,6 @@
 ---Friday 2/18---
 8:00 - 8:30 Begin kotlin youtube video and download android studio
+https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 8:30 - 9:30 Learn about android phone emulator in android studio
 
@@ -21,4 +22,4 @@
 
 
 ---Sunday 2/20---
-3:00 - 4:30 Continued studying video learning about different class types in kotlin, interfaces, type casting, and started learning about kotlin collections
+3:00 - 4:30 Continued studying video learning about different class types in kotlin, interfaces, type casting, and started learning about kotlin collections. got to 5:30:00 of the video
