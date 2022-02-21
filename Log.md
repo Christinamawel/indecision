@@ -1,3 +1,4 @@
+---Friday 2/18---
 8:00 - 8:30 Begin kotlin youtube video and download android studio
 
 8:30 - 9:30 Learn about android phone emulator in android studio
@@ -17,3 +18,7 @@
 2:00 - 3:00 continued video at normal speed learning about classes in kotlin
 
 3:00 - 4:00 continue learning about object oriented programming in kotlin
+
+
+---Sunday 2/20---
+3:00 - 4:30 Continued studying video learning about different class types in kotlin, interfaces, type casting, and started learning about kotlin collections
