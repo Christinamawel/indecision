@@ -23,3 +23,9 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 ---Sunday 2/20---
 3:00 - 4:30 Continued studying video learning about different class types in kotlin, interfaces, type casting, and started learning about kotlin collections. got to 5:30:00 of the video
+
+
+---Friday 2/25---
+1:00 - 1:20 add README.md and project proposal
+
+1:20 - 2:20 continue video learning about more kotlin collections (lists, maps, ArrayLists) and lambda expressions
