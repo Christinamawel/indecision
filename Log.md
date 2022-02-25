@@ -29,3 +29,7 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 1:00 - 1:20 add README.md and project proposal
 
 1:20 - 2:20 continue video learning about more kotlin collections (lists, maps, ArrayLists) and lambda expressions
+
+2:20 - 3:00 continue video learning about kotlin visibility modifiers
+
+3:00 - 3:45 learned about nested and inner classes, safe casting, and exception handling with try & catch blocks
