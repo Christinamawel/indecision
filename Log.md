@@ -33,3 +33,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 2:20 - 3:00 continue video learning about kotlin visibility modifiers
 
 3:00 - 3:45 learned about nested and inner classes, safe casting, and exception handling with try & catch blocks
+
+3:00 - 4:00 start studying UI coding in android studio
