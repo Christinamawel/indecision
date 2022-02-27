@@ -55,5 +55,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 9:40 - 10:30 Try to create UI on my own for second practice project. this was very difficult and I struggled to find good resources for complete beginners so I continued to watch the video and follow along.
 
-
+10:30 - 11:10 Finish UI layout for practice calculator app and learn about linear layouts, layout weight, and orientation.
 
