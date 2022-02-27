@@ -40,3 +40,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 4:30 - 5:10 learn how to create UI with practice age calculator app
 
 ![appImage](./log-img-2.png)
+
+5:10 - 6:00 learn how to about Dialogs and how to change text in the UI using OnclickListener and onDateSetListener
