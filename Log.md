@@ -1,4 +1,5 @@
 ---Friday 2/18---
+
 8:00 - 8:30 Begin kotlin youtube video and download android studio
 https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
@@ -22,10 +23,12 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 
 ---Sunday 2/20---
+
 3:00 - 4:30 Continued studying video learning about different class types in kotlin, interfaces, type casting, and started learning about kotlin collections. got to 5:30:00 of the video
 
 
 ---Friday 2/25---
+
 1:00 - 1:20 add README.md and project proposal
 
 1:20 - 2:20 continue video learning about more kotlin collections (lists, maps, ArrayLists) and lambda expressions
@@ -37,6 +40,7 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 3:00 - 4:00 start studying UI coding in android studio
 
 ---Saturday 2/26---
+
 4:30 - 5:10 learn how to create UI with practice age calculator app
 
 5:10 - 6:00 learn how to about Dialogs and how to change text in the UI using OnclickListener and onDateSetListener
@@ -46,3 +50,10 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 6:30 - 7:00 practice what I learned by adding age in Hours and age in years on my own
 
 ![appImage](./log-img-2.png)
+
+---Sunday 2/27---
+
+9:40 - 10:30 Try to create UI on my own for second practice project. this was very difficult and I struggled to find good resources for complete beginners so I continued to watch the video and follow along.
+
+
+
