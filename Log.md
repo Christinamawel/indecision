@@ -39,8 +39,10 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 ---Saturday 2/26---
 4:30 - 5:10 learn how to create UI with practice age calculator app
 
-![appImage](./log-img-2.png)
-
 5:10 - 6:00 learn how to about Dialogs and how to change text in the UI using OnclickListener and onDateSetListener
 
 6:00 - 6:30 finish following along to create age in minutes practice app
+
+6:30 - 7:00 practice what I learned by adding age in Hours and age in years on my own
+
+![appImage](./log-img-2.png)
