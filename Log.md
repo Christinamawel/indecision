@@ -42,3 +42,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 ![appImage](./log-img-2.png)
 
 5:10 - 6:00 learn how to about Dialogs and how to change text in the UI using OnclickListener and onDateSetListener
+
+6:00 - 6:30 finish following along to create age in minutes practice app
