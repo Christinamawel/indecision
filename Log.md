@@ -35,3 +35,8 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 3:00 - 3:45 learned about nested and inner classes, safe casting, and exception handling with try & catch blocks
 
 3:00 - 4:00 start studying UI coding in android studio
+
+---Saturday 2/26---
+4:30 - 5:10 learn how to create UI with practice age calculator app
+
+![appImage](./log-img-2.png)
