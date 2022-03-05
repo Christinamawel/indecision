@@ -57,6 +57,11 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 10:30 - 11:10 Finish UI layout for practice calculator app and learn about linear layouts, layout weight, and orientation.
 
-11:10 - 11:50 add functionality to display the number on the button clicked along with adding functionality to the clr button to clear the display
+11:10 - 11:50 add functionality to display the number of the button clicked along with adding functionality to the clr button to clear the display
 
 ![appImage](./log-img-3.png)
+
+---Saturday 3/5---
+
+12:00 - 1:00 Continue following along with video to adding functionality to the operator buttons and adding a decimal button. begin adding equal button functionality
+
