@@ -78,3 +78,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 ---Sunday 3/6---
 
 9:00 - 9:30 add function that removes keyboard from view after button is clicked
+
+9:30 - 10:00 try to figure out how to add multiple pages to an app. didnt work
