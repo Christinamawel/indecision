@@ -71,4 +71,10 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 7:10 - 7:40 create very basic app that just meets the MVP for project
 
+3 hours 10 min total
+
 ![appImage](./log-img-4.png)
+
+---Sunday 3/6---
+
+9:00 - 9:30 add function that removes keyboard from view after button is clicked
