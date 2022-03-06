@@ -84,3 +84,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 10:00 - 11:00 find and begin watching videos about android studio as I still am feeling very fuzzy on UI integration.
 
 11:00 - 12:00 learn more about liner and constraint layouts
+
+1:00 -2:00 learn more about UI integration and how to add images
