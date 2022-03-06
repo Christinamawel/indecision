@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
     private var answerTwo: EditText? = null
     private var answerThree: EditText? = null
     private var answerFour: EditText? = null
-    private var answer: TextView? =null
     private var answerMain: TextView? =null
     private var questionMain: TextView? =null
 
@@ -32,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         answerTwo = findViewById(R.id.answerTwo)
         answerThree = findViewById(R.id.answerThree)
         answerFour = findViewById(R.id.answerFour)
-        answer = findViewById(R.id.answer)
         answerMain = findViewById(R.id.answerMain)
         questionMain = findViewById(R.id.questionMain)
         val submitButton: Button = findViewById(R.id.submitButton)
@@ -58,8 +56,6 @@ class MainActivity : AppCompatActivity() {
         answerThree?.setText("")
         answerFour?.setText("")
 
-        answer?.text = answerArray[pickedNumber]
-        answerMain?.text = answer?.text
         questionMain?.text = userQuestion
         hideKeyboard()
         setContentView(R.layout.view_2)
