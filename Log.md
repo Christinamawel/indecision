@@ -65,3 +65,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 12:00 - 1:00 Continue following along with video to adding functionality to the operator buttons and adding a decimal button. begin adding equal button functionality
 
+5:30 - 6:00 finish adding functionality to the calculator app and finish video.
+
