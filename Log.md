@@ -80,3 +80,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 9:00 - 9:30 add function that removes keyboard from view after button is clicked
 
 9:30 - 10:00 try to figure out how to add multiple pages to an app. didnt work
+
+10:00 - 11:00 find and begin watching videos about android studio as I still am feeling very fuzzy on UI integration.
