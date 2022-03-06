@@ -67,3 +67,8 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 5:30 - 6:00 finish adding functionality to the calculator app and finish video.
 
+6:00 - 7:10 begin constructing a simple ui for app
+
+7:10 - 7:40 create very basic app that just meets the MVP for project
+
+![appImage](./log-img-4.png)
