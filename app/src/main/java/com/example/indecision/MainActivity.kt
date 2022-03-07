@@ -2,6 +2,7 @@ package com.example.indecision
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -19,8 +20,6 @@ class MainActivity : AppCompatActivity() {
     private var answerTwo: EditText? = null
     private var answerThree: EditText? = null
     private var answerFour: EditText? = null
-    private var answerMain: TextView? =null
-    private var questionMain: TextView? =null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,12 +30,13 @@ class MainActivity : AppCompatActivity() {
         answerTwo = findViewById(R.id.answerTwo)
         answerThree = findViewById(R.id.answerThree)
         answerFour = findViewById(R.id.answerFour)
-        answerMain = findViewById(R.id.answerMain)
-        questionMain = findViewById(R.id.questionMain)
         val submitButton: Button = findViewById(R.id.submitButton)
 
         submitButton.setOnClickListener {
             onClickAnswerRandomizer()
+            Intent(this, SecondActivity::class.java).also{
+                startActivity(it)
+            }
         }
     }
 
@@ -56,9 +56,8 @@ class MainActivity : AppCompatActivity() {
         answerThree?.setText("")
         answerFour?.setText("")
 
-        questionMain?.text = userQuestion
         hideKeyboard()
-        setContentView(R.layout.view_2)
+
     }
 
     fun Fragment.hideKeyboard() {

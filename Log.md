@@ -9,6 +9,8 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 10:00 - 10:45 create first app using kotlin (counts number of clicks on a button)
 
+2 hours 45 min total
+
 ![appImage](./log-img-1.png)
 
 10:45 - 12:00 continue video at 1.75 speed as it goes through basic programming with kotlin (variable types, template literals, if else statements, while loops, and when loops(similar to switch statements))
@@ -21,11 +23,13 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 3:00 - 4:00 continue learning about object oriented programming in kotlin
 
+4 hours 15 min total
 
 ---Sunday 2/20---
 
 3:00 - 4:30 Continued studying video learning about different class types in kotlin, interfaces, type casting, and started learning about kotlin collections. got to 5:30:00 of the video
 
+1 hour 30 min total
 
 ---Friday 2/25---
 
@@ -39,6 +43,8 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 3:00 - 4:00 start studying UI coding in android studio
 
+3 hours
+
 ---Saturday 2/26---
 
 4:30 - 5:10 learn how to create UI with practice age calculator app
@@ -49,6 +55,8 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 6:30 - 7:00 practice what I learned by adding age in Hours and age in years on my own
 
+2 hours 30 min total
+
 ![appImage](./log-img-2.png)
 
 ---Sunday 2/27---
@@ -58,6 +66,8 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 10:30 - 11:10 Finish UI layout for practice calculator app and learn about linear layouts, layout weight, and orientation.
 
 11:10 - 11:50 add functionality to display the number of the button clicked along with adding functionality to the clr button to clear the display
+
+2 hours 10 min total
 
 ![appImage](./log-img-3.png)
 
@@ -88,3 +98,9 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 1:00 -2:00 learn more about UI integration and how to add images
 
 2:00 - 3:00 continue learning about context in kotlin and more about XML activities
+
+5 hours total
+
+---Monday 3/7---
+
+1:00 - 1:45 learn about adding more android Activity views to a project
