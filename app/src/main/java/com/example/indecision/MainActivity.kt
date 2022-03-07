@@ -9,9 +9,7 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,23 +31,28 @@ class MainActivity : AppCompatActivity() {
         val submitButton: Button = findViewById(R.id.submitButton)
 
         submitButton.setOnClickListener {
+            val one = answerOne?.getText().toString()
+            val two = answerTwo?.getText().toString()
+            val three = answerThree?.getText().toString()
+            val four = answerFour?.getText().toString()
+            val userQuestion = question?.getText().toString()
+
+            val answerList= mutableListOf<String>(one, two, three, four)
+            val pickedNumber = (0..3).random()
+
+            val pickedAnswer = answerList[pickedNumber]
+
+            val newQuestion = Question(userQuestion, answerList, pickedAnswer)
+
             onClickAnswerRandomizer()
             Intent(this, SecondActivity::class.java).also{
+                it.putExtra("EXTRA_QUESTION", newQuestion)
                 startActivity(it)
             }
         }
     }
 
     private fun onClickAnswerRandomizer() {
-        val one = answerOne?.getText().toString()
-        val two = answerTwo?.getText().toString()
-        val three = answerThree?.getText().toString()
-        val four = answerFour?.getText().toString()
-        val userQuestion = question?.getText().toString()
-
-        val answerArray = arrayOf(one, two, three, four)
-        val pickedNumber = (0..3).random()
-
         question?.setText("")
         answerOne?.setText("")
         answerTwo?.setText("")

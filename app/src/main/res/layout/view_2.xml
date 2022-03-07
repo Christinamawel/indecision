@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/answerMain"
+        android:id="@+id/finalAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -23,15 +23,15 @@
         android:text="Go Back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answerMain" />
+        app:layout_constraintTop_toBottomOf="@+id/finalAnswer" />
 
     <TextView
-        android:id="@+id/questionMain"
+        android:id="@+id/finalQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/answerMain"
+        app:layout_constraintBottom_toTopOf="@+id/finalAnswer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

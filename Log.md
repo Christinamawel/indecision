@@ -104,3 +104,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 ---Monday 3/7---
 
 1:00 - 1:45 learn about adding more android Activity views to a project
+
+1:45 - 2:30 learn about passing variables between activities
