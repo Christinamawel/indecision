@@ -106,3 +106,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 1:00 - 1:45 learn about adding more android Activity views to a project
 
 1:45 - 2:30 learn about passing variables between activities
+
+2:30 - 3:30 learn about permissions
