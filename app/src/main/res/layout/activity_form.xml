@@ -30,26 +30,30 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvOptionList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/etEditQuestion"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/etAddOption"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="add option"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/saveAndRollBtn"
         app:layout_constraintEnd_toStartOf="@+id/addOptionBtn"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editQuestion"
+        android:id="@+id/etEditQuestion"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Edit Question"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/etAddOption"
         app:layout_constraintEnd_toStartOf="@+id/addOptionBtn"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -59,15 +63,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/saveAndRollBtn"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/addOptionBtn2"
+        android:id="@+id/addQuestionBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Edit"
         app:layout_constraintBottom_toTopOf="@+id/addOptionBtn"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/saveAndRollBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save and Roll Options"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

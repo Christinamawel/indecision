@@ -118,3 +118,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 10:00 - 11:30 attempt to create a recycler view for question options. run into bug
 
 1:00 - 2:00 try to fix implementing recycler view with no luck
+
+2:30 - 3:30 get recycler view to work without delete functionality and add to QuestionFormActivity

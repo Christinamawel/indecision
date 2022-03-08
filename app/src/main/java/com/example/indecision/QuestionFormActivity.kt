@@ -8,6 +8,7 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,44 +16,64 @@ import androidx.recyclerview.widget.RecyclerView
 
 class QuestionFormActivity : AppCompatActivity() {
 
+    private lateinit var customAdapter: CustomAdapter
+    private var etAddOption: EditText? = null
+    private var etEditQuestion: EditText? = null
+    private var tvQuestion: TextView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_form)
 
+        customAdapter = CustomAdapter(mutableListOf())
+
         val recyclerview = findViewById<RecyclerView>(R.id.rvOptionList)
+        val addOptionBtn: Button = findViewById(R.id.addOptionBtn)
+        val addQuestionBtn: Button = findViewById(R.id.addQuestionBtn)
+        val saveAndRollBtn: Button = findViewById(R.id.saveAndRollBtn)
+        etAddOption = findViewById(R.id.etAddOption)
+        etEditQuestion = findViewById(R.id.etEditQuestion)
+        tvQuestion = findViewById(R.id.tvQuestion)
+
+        recyclerview.adapter = customAdapter
 
         recyclerview.layoutManager = LinearLayoutManager(this)
 
-        val options = ArrayList<OptionViewModel>()
+        addOptionBtn.setOnClickListener {
+            val optionText = etAddOption?.text.toString()
+            if (optionText.isNotEmpty()) {
+                val option = OptionViewModel(optionText, false)
+                customAdapter.addOption(option)
+                etAddOption?.text?.clear()
+            }
+        }
 
-        val adapter = CustomAdapter(options)
+        addQuestionBtn.setOnClickListener {
+            val newQuestion = etEditQuestion?.text.toString()
+            tvQuestion?.text = newQuestion
+            etEditQuestion?.text?.clear()
+        }
 
-        recyclerview.adapter = adapter
+        saveAndRollBtn.setOnClickListener {
+            val currentOptions = mutableListOf<String>()
+            for (option in customAdapter.mList) {
+                currentOptions.add(option.text)
+            }
 
-//        submitButton.setOnClickListener {
-//
-//            val answerList = mutableListOf<String>(one, two, three, four)
-//            val pickedNumber = (0..3).random()
-//
-//            val pickedAnswer = answerList[pickedNumber]
-//
-//            val newQuestion = Question(userQuestion, answerList, pickedAnswer)
-//
-//            onClickAnswerRandomizer()
-//            Intent(this, SecondActivity::class.java).also {
-//                it.putExtra("EXTRA_QUESTION", newQuestion)
-//                startActivity(it)
-//            }
-//        }
-//    }
-//    private fun onClickAnswerRandomizer() {
-//        question?.setText("")
-//        answerOne?.setText("")
-//        answerTwo?.setText("")
-//        answerThree?.setText("")
-//        answerFour?.setText("")
-//
-//        hideKeyboard()
+            val pickedNumber = (0 until currentOptions.size).random()
+
+            val pickedAnswer = currentOptions[pickedNumber]
+            val currentQuestion = tvQuestion?.text.toString()
+
+            val newQuestion = Question(currentQuestion, currentOptions, pickedAnswer)
+
+            hideKeyboard()
+
+            Intent(this, SecondActivity::class.java).also {
+                it.putExtra("EXTRA_QUESTION", newQuestion)
+                startActivity(it)
+            }
+        }
     }
 
     fun Fragment.hideKeyboard() {
