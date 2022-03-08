@@ -108,3 +108,7 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 1:45 - 2:30 learn about passing variables between activities
 
 2:30 - 3:30 learn about permissions
+
+---tuesday 3/8---
+
+8:00 - 9:00 study adding firebase and start reorganising project

@@ -33,11 +33,10 @@ class MainActivity : AppCompatActivity() {
         answerThree = findViewById(R.id.answerThree)
         answerFour = findViewById(R.id.answerFour)
         val submitButton: Button = findViewById(R.id.submitButton)
-        val permissionsBtn: Button = findViewById(R.id.permissionsBtn)
 
-        permissionsBtn.setOnClickListener {
-            requestPermissions()
-        }
+//        permissionsBtn.setOnClickListener {
+//            requestPermissions()
+//        }
 
         submitButton.setOnClickListener {
             val one = answerOne?.getText().toString()
@@ -85,32 +84,32 @@ class MainActivity : AppCompatActivity() {
         inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
     }
 
-    private fun hasWriteExternalStoragePermission() =
-        ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED
+//    private fun hasWriteExternalStoragePermission() =
+//        ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED
 
-    private fun requestPermissions() {
-        var permissionsToRequest = mutableListOf<String>()
-        if(!hasWriteExternalStoragePermission()) {
-            permissionsToRequest.add(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-        }
+//    private fun requestPermissions() {
+//        var permissionsToRequest = mutableListOf<String>()
+//        if(!hasWriteExternalStoragePermission()) {
+//            permissionsToRequest.add(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+//        }
+//
+//        if(permissionsToRequest.isNotEmpty()) {
+//            ActivityCompat.requestPermissions(this, permissionsToRequest.toTypedArray(), 0)
+//        }
+//    }
 
-        if(permissionsToRequest.isNotEmpty()) {
-            ActivityCompat.requestPermissions(this, permissionsToRequest.toTypedArray(), 0)
-        }
-    }
-
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if(requestCode == 0 && grantResults.isNotEmpty()) {
-            for(i in grantResults.indices) {
-                if(grantResults[i] == PackageManager.PERMISSION_GRANTED) {
-                    Log.d("PermissionsRequest", "${permissions[i]} granted")
-                }
-            }
-        }
-    }
+//    override fun onRequestPermissionsResult(
+//        requestCode: Int,
+//        permissions: Array<out String>,
+//        grantResults: IntArray
+//    ) {
+//        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+//        if(requestCode == 0 && grantResults.isNotEmpty()) {
+//            for(i in grantResults.indices) {
+//                if(grantResults[i] == PackageManager.PERMISSION_GRANTED) {
+//                    Log.d("PermissionsRequest", "${permissions[i]} granted")
+//                }
+//            }
+//        }
+//    }
 }
