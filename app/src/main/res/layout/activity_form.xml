@@ -17,58 +17,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/question"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Question"
+        android:text="Question1"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
-    <EditText
-        android:id="@+id/answerOne"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOptionList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Answer 1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question" />
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
 
     <EditText
-        android:id="@+id/answerTwo"
-        android:layout_width="match_parent"
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Answer 2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answerOne" />
+        android:hint="add option"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addOptionBtn"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/answerThree"
-        android:layout_width="match_parent"
+        android:id="@+id/editQuestion"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Answer 3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answerTwo" />
-
-    <EditText
-        android:id="@+id/answerFour"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Answer 4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answerThree" />
+        android:hint="Edit Question"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toStartOf="@+id/addOptionBtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/submitButton"
+        android:id="@+id/addOptionBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answerFour" />
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/addOptionBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        app:layout_constraintBottom_toTopOf="@+id/addOptionBtn"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
