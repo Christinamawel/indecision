@@ -1,5 +1,6 @@
 package com.example.indecision
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -25,7 +26,9 @@ class SecondActivity : AppCompatActivity() {
         finalQuestion?.text = question
 
         backButton.setOnClickListener {
-            finish()
+            Intent(this, MainActivity::class.java).also {
+                startActivity(it)
+            }
         }
     }
 }

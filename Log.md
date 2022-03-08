@@ -112,3 +112,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 ---tuesday 3/8---
 
 8:00 - 9:00 study adding firebase and start reorganising project
+
+9:00 - 10:00 finish reorganising project and make all pages accessible
