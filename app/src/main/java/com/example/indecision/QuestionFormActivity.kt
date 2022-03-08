@@ -10,6 +10,8 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class QuestionFormActivity : AppCompatActivity() {
 
@@ -17,6 +19,15 @@ class QuestionFormActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_form)
 
+        val recyclerview = findViewById<RecyclerView>(R.id.rvOptionList)
+
+        recyclerview.layoutManager = LinearLayoutManager(this)
+
+        val options = ArrayList<OptionViewModel>()
+
+        val adapter = CustomAdapter(options)
+
+        recyclerview.adapter = adapter
 
 //        submitButton.setOnClickListener {
 //

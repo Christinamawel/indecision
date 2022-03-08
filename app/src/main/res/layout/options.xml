@@ -9,7 +9,7 @@
     >
 
     <TextView
-        android:id="@+id/tvOptionTitle"
+        android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Example"

@@ -116,3 +116,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 9:00 - 10:00 finish reorganising project and make all pages accessible
 
 10:00 - 11:30 attempt to create a recycler view for question options. run into bug
+
+1:00 - 2:00 try to fix implementing recycler view with no luck
