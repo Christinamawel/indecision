@@ -109,6 +109,8 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 2:30 - 3:30 learn about permissions
 
+2 hours 30 minutes total
+
 ---tuesday 3/8---
 
 8:00 - 9:00 study adding firebase and start reorganising project
@@ -122,3 +124,9 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 2:30 - 3:30 get recycler view to work without delete functionality and add to QuestionFormActivity
 
 3:30 - 4:20 add user authentication with firebase
+
+6 hours 20 minutes total
+
+---wednesday 3/9---
+
+8:00 - 9:00 add questions to firestore
