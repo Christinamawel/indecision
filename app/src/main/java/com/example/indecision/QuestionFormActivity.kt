@@ -78,7 +78,7 @@ class QuestionFormActivity : AppCompatActivity() {
 
             val pickedAnswer = currentOptions[pickedNumber]
             val currentQuestion = tvQuestion?.text.toString()
-            val currentUser = auth.currentUser?.toString()
+            val currentUser = auth.currentUser?.email.toString()
 
             val newQuestion = Question(currentQuestion, currentOptions, pickedAnswer, currentUser)
 

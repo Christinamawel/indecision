@@ -102,7 +102,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun checkedLoggedInState() {
         if(auth.currentUser == null) {
-            tvLoggedIn.text = "You Are Not Logged In"
+            tvLoggedIn.text = "You Are Not Logged In! Login to Save Decisions"
         } else {
             tvLoggedIn.text = "You Are Logged In"
         }

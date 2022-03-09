@@ -15,6 +15,7 @@
         <activity android:name=".SecondActivity" />
         <activity android:name=".QuestionFormActivity" />
         <activity android:name=".LoginActivity" />
+        <activity android:name=".QuestionListActivity" />
 
         <activity
             android:name=".MainActivity"

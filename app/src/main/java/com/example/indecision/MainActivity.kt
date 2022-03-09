@@ -4,14 +4,21 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val formBtn: Button = findViewById(R.id.formBtn)
         val accountBtn: Button =findViewById(R.id.accountBtn)
+        val decisionListBtn: Button = findViewById(R.id.decisionListBtn)
+
+        auth = FirebaseAuth.getInstance()
 
         formBtn.setOnClickListener {
             Intent(this, QuestionFormActivity::class.java).also {
@@ -22,6 +29,18 @@ class MainActivity : AppCompatActivity() {
         accountBtn.setOnClickListener {
             Intent(this, LoginActivity::class.java).also {
                 startActivity(it)
+            }
+        }
+
+        decisionListBtn.setOnClickListener {
+            if(auth.currentUser == null) {
+                Intent(this, LoginActivity::class.java).also {
+                    startActivity(it)
+                }
+            } else {
+                Intent(this, QuestionListActivity::class.java).also {
+                    startActivity(it)
+                }
             }
         }
 
