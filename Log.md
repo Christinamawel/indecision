@@ -132,3 +132,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 8:00 - 9:00 add questions to firestore
 
 9:00 - 11:00 get firestore questions data and add to recycler view
+
+1:00 -12:00 try to solve how to switch pages from recycler view buttons. work in progress

@@ -56,7 +56,13 @@ class QuestionListActivity : AppCompatActivity(){
                 }
             }
         }
+    }
 
+
+    companion object {
+           fun rollDecision(decision: Question) {
+
+           }
     }
 
     private fun retrieveDecisions() = CoroutineScope(Dispatchers.IO).launch {

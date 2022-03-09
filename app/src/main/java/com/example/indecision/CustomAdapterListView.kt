@@ -1,8 +1,10 @@
 package com.example.indecision
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -26,6 +28,9 @@ class CustomAdapterListView(private val mList: List<Question>) : RecyclerView.Ad
         // sets the text to the textview from our itemHolder class
         holder.textView.text = decisionViewModel
 
+        holder.reRollBtn.setOnClickListener {
+
+        }
     }
 
     // return the number of the items in the list
@@ -36,5 +41,6 @@ class CustomAdapterListView(private val mList: List<Question>) : RecyclerView.Ad
     // Holds the views for adding it to image and text
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val textView: TextView = itemView.findViewById(R.id.textView)
+        val reRollBtn: Button = itemView.findViewById(R.id.reRollBtn)
     }
 }
