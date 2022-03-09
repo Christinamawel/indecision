@@ -3,6 +3,7 @@ package com.example.indecision
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -26,6 +27,9 @@ class CustomAdapter(val mList: MutableList<OptionViewModel>) : RecyclerView.Adap
         // sets the text to the textview from our itemHolder class
         holder.textView.text = OptionViewModel.text
 
+        holder.optionDeleteBtn.setOnClickListener {
+            removeOption(mList[position], position)
+        }
     }
 
     // return the number of the items in the list
@@ -36,11 +40,17 @@ class CustomAdapter(val mList: MutableList<OptionViewModel>) : RecyclerView.Adap
     // Holds the views for adding it to image and text
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val textView: TextView = itemView.findViewById(R.id.textView)
+        val optionDeleteBtn: Button = itemView.findViewById(R.id.optionDeleteBtn)
     }
 
     fun addOption(option: OptionViewModel) {
         mList.add(option)
         notifyItemInserted(mList.size - 1)
+    }
+
+    fun removeOption(option: OptionViewModel, position: Int) {
+        mList.remove(option)
+        notifyItemRemoved(position)
     }
 
     fun deleteOption() {

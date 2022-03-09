@@ -136,3 +136,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 11:00 -12:00 try to solve how to switch pages from recycler view buttons. work in progress
 
 1:00 -2:30 figure out how to switch pages from recycler view
+
+2:30 - 3:00 add remove functionality to form recycler view

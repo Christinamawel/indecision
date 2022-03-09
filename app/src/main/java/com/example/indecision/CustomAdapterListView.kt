@@ -30,7 +30,6 @@ class CustomAdapterListView(private val mList: List<Question>) : RecyclerView.Ad
         holder.textView.text = decisionViewModel
 
         holder.reRollBtn.setOnClickListener {
-
             val activity = holder.itemView.context as Activity
             val question = mList[position]
             val intent = Intent(activity, SecondActivity::class.java).also {
