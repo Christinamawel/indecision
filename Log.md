@@ -138,3 +138,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 1:00 -2:30 figure out how to switch pages from recycler view
 
 2:30 - 3:00 add remove functionality to form recycler view
+
+3:00 - 3:30 update firebase on re-roll

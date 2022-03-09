@@ -8,9 +8,18 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.firestore.SetOptions
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
+import kotlinx.coroutines.withContext
 
 class CustomAdapterListView(private val mList: List<Question>) : RecyclerView.Adapter<CustomAdapterListView.ViewHolder>() {
 
+    private val questionCollectionRef = Firebase.firestore.collection("questions")
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // inflates the card_view_design view
@@ -30,9 +39,17 @@ class CustomAdapterListView(private val mList: List<Question>) : RecyclerView.Ad
         holder.textView.text = decisionViewModel
 
         holder.reRollBtn.setOnClickListener {
+            val possibleOutcomes = mList[position].answers
+            val pickedNumber = (0 until possibleOutcomes.size).random()
+            val outcomeMapped = mutableMapOf<String, String>()
+            val newOutcome = possibleOutcomes[pickedNumber]
+            outcomeMapped["pickedAnswer"] = newOutcome
             val activity = holder.itemView.context as Activity
             val question = mList[position]
-            val intent = Intent(activity, SecondActivity::class.java).also {
+
+            updateChosenOption(question, outcomeMapped)
+
+            Intent(activity, SecondActivity::class.java).also {
                 it.putExtra("EXTRA_QUESTION", question)
                activity.startActivity(it)
             }
@@ -48,5 +65,27 @@ class CustomAdapterListView(private val mList: List<Question>) : RecyclerView.Ad
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val textView: TextView = itemView.findViewById(R.id.textView)
         val reRollBtn: Button = itemView.findViewById(R.id.reRollBtn)
+    }
+
+    private fun updateChosenOption(question: Question, chosenOptionMap: Map<String, String>) = CoroutineScope(Dispatchers.IO).launch {
+        val questionQuery = questionCollectionRef
+            .whereEqualTo("question", question.question)
+            .whereEqualTo("answers", question.answers)
+            .whereEqualTo("pickedAnswer", question.pickedAnswer)
+            .whereEqualTo("user", question.user)
+            .get()
+            .await()
+        if(questionQuery.documents.isNotEmpty()) {
+            for(document in questionQuery) {
+                try {
+                    questionCollectionRef.document(document.id).set(
+                        chosenOptionMap,
+                        SetOptions.merge()
+                    ).await()
+                } catch(e: Exception){
+
+                }
+            }
+        }
     }
 }
