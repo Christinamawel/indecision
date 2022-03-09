@@ -1,5 +1,6 @@
 package com.example.indecision
 
+import android.app.Activity
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -30,6 +31,12 @@ class CustomAdapterListView(private val mList: List<Question>) : RecyclerView.Ad
 
         holder.reRollBtn.setOnClickListener {
 
+            val activity = holder.itemView.context as Activity
+            val question = mList[position]
+            val intent = Intent(activity, SecondActivity::class.java).also {
+                it.putExtra("EXTRA_QUESTION", question)
+               activity.startActivity(it)
+            }
         }
     }
 
@@ -38,7 +45,7 @@ class CustomAdapterListView(private val mList: List<Question>) : RecyclerView.Ad
         return mList.size
     }
 
-    // Holds the views for adding it to image and text
+//     Holds the views for adding it to image and text
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val textView: TextView = itemView.findViewById(R.id.textView)
         val reRollBtn: Button = itemView.findViewById(R.id.reRollBtn)

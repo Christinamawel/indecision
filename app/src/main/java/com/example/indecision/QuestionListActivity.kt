@@ -46,7 +46,7 @@ class QuestionListActivity : AppCompatActivity(){
 
 
         listViewBtn.setOnClickListener {
-            if(auth.currentUser == null) {
+            if (auth.currentUser == null) {
                 Intent(this, LoginActivity::class.java).also {
                     startActivity(it)
                 }
@@ -56,13 +56,6 @@ class QuestionListActivity : AppCompatActivity(){
                 }
             }
         }
-    }
-
-
-    companion object {
-           fun rollDecision(decision: Question) {
-
-           }
     }
 
     private fun retrieveDecisions() = CoroutineScope(Dispatchers.IO).launch {
