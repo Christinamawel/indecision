@@ -11,9 +11,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val formBtn: Button = findViewById(R.id.formBtn)
+        val accountBtn: Button =findViewById(R.id.accountBtn)
 
         formBtn.setOnClickListener {
             Intent(this, QuestionFormActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        accountBtn.setOnClickListener {
+            Intent(this, LoginActivity::class.java).also {
                 startActivity(it)
             }
         }
