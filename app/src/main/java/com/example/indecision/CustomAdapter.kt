@@ -22,10 +22,10 @@ class CustomAdapter(val mList: MutableList<OptionViewModel>) : RecyclerView.Adap
     // binds the list items to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val OptionViewModel = mList[position]
+        val optionViewModel = mList[position]
 
         // sets the text to the textview from our itemHolder class
-        holder.textView.text = OptionViewModel.text
+        holder.textView.text = optionViewModel.text
 
         holder.optionDeleteBtn.setOnClickListener {
             removeOption(mList[position], position)
@@ -51,11 +51,5 @@ class CustomAdapter(val mList: MutableList<OptionViewModel>) : RecyclerView.Adap
     fun removeOption(option: OptionViewModel, position: Int) {
         mList.remove(option)
         notifyItemRemoved(position)
-    }
-
-    fun deleteOption() {
-        mList.removeAll { option ->
-            option.deleted
-        }
     }
 }

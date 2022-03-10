@@ -38,17 +38,10 @@ class CustomAdapterListView(private val mList: List<Question>) : RecyclerView.Ad
         holder.textView.text = decisionViewModel
 
         holder.reRollBtn.setOnClickListener {
-            val possibleOutcomes = mList[position].answers
-            val pickedNumber = (0 until possibleOutcomes.size).random()
-            val outcomeMapped = mutableMapOf<String, String>()
-            val newOutcome = possibleOutcomes[pickedNumber]
-            outcomeMapped["pickedAnswer"] = newOutcome
             val activity = holder.itemView.context as Activity
             val question = mList[position]
 
-            updateChosenOption(question, outcomeMapped)
-
-            Intent(activity, SecondActivity::class.java).also {
+            Intent(activity, EditFormActivity::class.java).also {
                 it.putExtra("EXTRA_QUESTION", question)
                activity.startActivity(it)
             }
@@ -64,27 +57,5 @@ class CustomAdapterListView(private val mList: List<Question>) : RecyclerView.Ad
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val textView: TextView = itemView.findViewById(R.id.textView)
         val reRollBtn: Button = itemView.findViewById(R.id.reRollBtn)
-    }
-
-    private fun updateChosenOption(question: Question, chosenOptionMap: Map<String, String>) = CoroutineScope(Dispatchers.IO).launch {
-        val questionQuery = questionCollectionRef
-            .whereEqualTo("question", question.question)
-            .whereEqualTo("answers", question.answers)
-            .whereEqualTo("pickedAnswer", question.pickedAnswer)
-            .whereEqualTo("user", question.user)
-            .get()
-            .await()
-        if(questionQuery.documents.isNotEmpty()) {
-            for(document in questionQuery) {
-                try {
-                    questionCollectionRef.document(document.id).set(
-                        chosenOptionMap,
-                        SetOptions.merge()
-                    ).await()
-                } catch(e: Exception){
-
-                }
-            }
-        }
     }
 }

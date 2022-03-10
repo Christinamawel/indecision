@@ -20,6 +20,8 @@ class LogoutActivity : AppCompatActivity() {
         val logoutBtn: Button = findViewById(R.id.logoutBtn)
         auth = FirebaseAuth.getInstance()
 
+        tvLoggedIn?.text = "Logged in as ${auth.currentUser?.email.toString()}"
+
         logoutBtn.setOnClickListener {
             auth.signOut()
             Intent(this, MainActivity::class.java).also {

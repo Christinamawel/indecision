@@ -2,6 +2,8 @@ package com.example.indecision
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -24,6 +26,10 @@ class SecondActivity : AppCompatActivity() {
 
         finalAnswer?.text = answer
         finalQuestion?.text = question
+
+        finalAnswer?.visibility = View.VISIBLE
+        val animation = AnimationUtils.loadAnimation(this, R.anim.fade_in)
+        finalAnswer?.startAnimation(animation)
 
         backButton.setOnClickListener {
             Intent(this, MainActivity::class.java).also {
