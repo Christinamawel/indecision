@@ -33,13 +33,19 @@ _If you have a hard time making decisions this is the app for you. Add a questio
 * Clone the GitHub repository: https://github.com/Christinamawel/indecision.git
 * open android studio and select File > open... > and locate the cloned repository on your pc.
 * click on device manager in top right corner
+  <br>
   ![appImage](./img-md/device-manager-icon.png)
+  <br>
 * click Create Device and choose a device from list then click next.(for this project pixel 4 was used)
 * on the next page find R in the list and click the download link next to it. once finished downloading select it and click next.
-  ![appImage](./img-md/select-r.png)
+  <br>
+![appImage](./img-md/select-r.png)
+  <br>
 * on the next page hit finish and your virtual device will be installed.
 * from the dropdown menu on the toolbar select your new device and hit the play button.
+  <br>
   ![appImage](./img-md/select-device.png)
+  <br>
 
 <br>
 
