@@ -142,3 +142,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 3:00 - 3:30 update firebase on re-roll
 
 3:30 - 4:30 create magic 8 ball activity
+
+4:30 - 5:00 learn how to connect physical device to android studio for testing

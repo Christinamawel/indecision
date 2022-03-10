@@ -22,7 +22,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Let your Phone Make Decision for You!"
+        android:text="Let your Phone Make Decisions for You!"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -32,7 +32,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="8dp"
         android:scaleType="fitEnd"
         android:src="@drawable/thinking_guy"
