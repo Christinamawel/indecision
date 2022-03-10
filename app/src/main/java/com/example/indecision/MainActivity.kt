@@ -28,8 +28,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         accountBtn.setOnClickListener {
-            Intent(this, LoginActivity::class.java).also {
-                startActivity(it)
+            if(auth.currentUser == null) {
+                Intent(this, LoginActivity::class.java).also {
+                    startActivity(it)
+                }
+            } else {
+                Intent(this, LogoutActivity::class.java).also {
+                    startActivity(it)
+                }
             }
         }
 

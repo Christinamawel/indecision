@@ -2,6 +2,7 @@ package com.example.indecision
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
@@ -39,27 +40,22 @@ class LoginActivity : AppCompatActivity() {
         etPasswordLogin = findViewById(R.id.etPasswordLogin)
         val btnRegister: Button = findViewById(R.id.btnRegister)
         val btnLogin: Button = findViewById(R.id.btnLogin)
-        val logoutBtn: Button = findViewById(R.id.logoutBtn)
 
         btnRegister.setOnClickListener {
             registerUser()
             hideKeyboard()
+            Intent(this, MainActivity::class.java).also {
+                startActivity(it)
+            }
         }
 
         btnLogin.setOnClickListener {
             loginUser()
             hideKeyboard()
+            Intent(this, MainActivity::class.java).also {
+                startActivity(it)
+            }
         }
-
-        logoutBtn.setOnClickListener {
-            auth.signOut()
-            checkedLoggedInState()
-        }
-    }
-
-    override fun onStart() {
-        super.onStart()
-        checkedLoggedInState()
     }
 
     private fun registerUser() {
@@ -69,9 +65,6 @@ class LoginActivity : AppCompatActivity() {
             CoroutineScope(Dispatchers.IO).launch {
                 try {
                     auth.createUserWithEmailAndPassword(email, password).await()
-                    withContext(Dispatchers.Main) {
-                        checkedLoggedInState()
-                    }
                 } catch(e: Exception) {
                     withContext(Dispatchers.Main) {
                         Toast.makeText(this@LoginActivity, e.message, Toast.LENGTH_LONG).show()
@@ -88,23 +81,12 @@ class LoginActivity : AppCompatActivity() {
             CoroutineScope(Dispatchers.IO).launch {
                 try {
                     auth.signInWithEmailAndPassword(email, password).await()
-                    withContext(Dispatchers.Main) {
-                        checkedLoggedInState()
-                    }
                 } catch(e: Exception) {
                     withContext(Dispatchers.Main) {
                         Toast.makeText(this@LoginActivity, e.message, Toast.LENGTH_LONG).show()
                     }
                 }
             }
-        }
-    }
-
-    private fun checkedLoggedInState() {
-        if(auth.currentUser == null) {
-            tvLoggedIn.text = "You Are Not Logged In! Login to Save Decisions"
-        } else {
-            tvLoggedIn.text = "You Are Logged In"
         }
     }
 

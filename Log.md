@@ -146,3 +146,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 4:30 - 5:00 learn how to connect physical device to android studio for testing
 
 8:00 - 8:30 finish README.md
+
+8:30 - 9:00 add logout page
