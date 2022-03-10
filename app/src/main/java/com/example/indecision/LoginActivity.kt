@@ -22,8 +22,6 @@ import java.lang.Exception
 
 class LoginActivity : AppCompatActivity() {
 
-    private var etEmailRegister: EditText? = null
-    private var etPasswordRegister: EditText? = null
     private var etEmailLogin: EditText? = null
     private var etPasswordLogin: EditText? = null
 
@@ -34,14 +32,12 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         auth = FirebaseAuth.getInstance()
 
-        etEmailRegister = findViewById(R.id.etEmailRegister)
-        etPasswordRegister = findViewById(R.id.etPasswordRegister)
         etEmailLogin = findViewById(R.id.etEmailLogin)
         etPasswordLogin = findViewById(R.id.etPasswordLogin)
-        val btnRegister: Button = findViewById(R.id.btnRegister)
+        val registerBtn: Button = findViewById(R.id.registerBtn)
         val btnLogin: Button = findViewById(R.id.btnLogin)
 
-        btnRegister.setOnClickListener {
+        registerBtn.setOnClickListener {
             registerUser()
             hideKeyboard()
             Intent(this, MainActivity::class.java).also {
@@ -59,8 +55,8 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun registerUser() {
-        val email = etEmailRegister?.text.toString()
-        val password = etPasswordRegister?.text.toString()
+        val email = etEmailLogin?.text.toString()
+        val password = etPasswordLogin?.text.toString()
         if(email.isNotEmpty() && password.isNotEmpty()) {
             CoroutineScope(Dispatchers.IO).launch {
                 try {
