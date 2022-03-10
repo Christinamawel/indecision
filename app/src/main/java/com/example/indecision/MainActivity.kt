@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val formBtn: Button = findViewById(R.id.formBtn)
         val accountBtn: Button =findViewById(R.id.accountBtn)
         val decisionListBtn: Button = findViewById(R.id.decisionListBtn)
+        val eightBallBtn: Button = findViewById(R.id.eightBallBtn)
 
         auth = FirebaseAuth.getInstance()
 
@@ -41,6 +42,12 @@ class MainActivity : AppCompatActivity() {
                 Intent(this, QuestionListActivity::class.java).also {
                     startActivity(it)
                 }
+            }
+        }
+
+        eightBallBtn.setOnClickListener {
+            Intent(this, EightBallActivity::class.java).also {
+                startActivity(it)
             }
         }
 

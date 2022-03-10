@@ -16,6 +16,7 @@
         <activity android:name=".QuestionFormActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".QuestionListActivity" />
+        <activity android:name=".EightBallActivity" />
 
         <activity
             android:name=".MainActivity"

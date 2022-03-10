@@ -140,3 +140,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 2:30 - 3:00 add remove functionality to form recycler view
 
 3:00 - 3:30 update firebase on re-roll
+
+3:30 - 4:30 create magic 8 ball activity
