@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 2 hours 45 min total
 
-![appImage](./log-img-1.png)
+![appImage](./img-md/log-img-1.png)
 
 10:45 - 12:00 continue video at 1.75 speed as it goes through basic programming with kotlin (variable types, template literals, if else statements, while loops, and when loops(similar to switch statements))
 
@@ -57,7 +57,7 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 2 hours 30 min total
 
-![appImage](./log-img-2.png)
+![appImage](./img-md/log-img-2.png)
 
 ---Sunday 2/27---
 
@@ -69,7 +69,7 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 2 hours 10 min total
 
-![appImage](./log-img-3.png)
+![appImage](./img-md/log-img-3.png)
 
 ---Saturday 3/5---
 
@@ -83,7 +83,7 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 
 3 hours 10 min total
 
-![appImage](./log-img-4.png)
+![appImage](./img-md/log-img-4.png)
 
 ---Sunday 3/6---
 
@@ -144,3 +144,5 @@ https://www.youtube.com/watch?v=HwoxgUPabMk&t=19785s
 3:30 - 4:30 create magic 8 ball activity
 
 4:30 - 5:00 learn how to connect physical device to android studio for testing
+
+8:00 - 8:30 finish README.md

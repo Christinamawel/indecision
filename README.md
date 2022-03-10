@@ -2,31 +2,60 @@
 
 #### By **Christina Welch**
 
-#### _This project is a work in progress. It will be my final capstone project for Epicodus School._
+#### _This was the final capstone project made for Epicodus School. It was made in android studio using kotlin._
 
-## Capstone Project Proposal
+<br>
 
-### Name of Project: indecision -an android phone app
+![appImage](./img-md/home-page.png)
 
-### Project's Purpose or Goal: a phone app to help users make decisions in fun ways.
+<br>
 
-### List the absolute minimum features the project requires to meet this purpose or goal:
--the user can input options and use the app to randomly output one option to them.
+## 💾 Technologies Used
 
- ### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
--Android Studio with Kotlin
+* Kotlin
+* Android Studio
+* XML
+* Google Firebase
 
- ### If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
--I would like to add various fun ways to get an answer like a spinning wheel, rolling dice, or maybe even a small game. It would be great if I have time to add different styles of randomization a user can choose from.
+<br>
 
--I would like to learn how to publish my app onto the google play store as a real application.
+## 💻 Description
 
--I would love if I have time to allow users to save past questions and possible outcomes so they can use them again. for example if the user makes a wheel of possible dinners to eat that night it would be great if they could come back to the same wheel again.
+_A final capstone project made for Epicodus school. I studied kotlin and android studio for a week on my own and created an app with firebase integration._
+<br>
+_If you have a hard time making decisions this is the app for you. Add a question with as many possible outcomes as you'd like and the app will randomise an answer for you. create an account to re roll past decisions or use the magic 8 ball for yes or no questions._
 
--I would also like if the user can modify their decisions and options, and add a button to remove whichever option was chosen so they can re roll again right away without that option
+<br>
 
-### What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
--I think I would need to learn firebase with kotlin or some other database tool
+## ⚙️ Setup
 
-Is there anything else you'd like your instructor to know?
--I made the MVP of this simple because I'm not sure how far I can get in learning Kotlin. If I am able to learn enough I would like to add a lot more and really make this a full fledged App
+* download android studio [here](https://developer.android.com/studio)
+* Clone the GitHub repository: https://github.com/Christinamawel/indecision.git
+* open android studio and select File > open... > and locate the cloned repository on your pc.
+* click on device manager in top right corner
+  ![appImage](./img-md/device-manager-icon.png)
+* click Create Device and choose a device from list then click next.(for this project pixel 4 was used)
+* on the next page find R in the list and click the download link next to it. once finished downloading select it and click next.
+  ![appImage](./img-md/select-r.png)
+* on the next page hit finish and your virtual device will be installed.
+* from the dropdown menu on the toolbar select your new device and hit the play button.
+  ![appImage](./img-md/select-device.png)
+
+<br>
+
+## ❌ Known Bugs
+
+- decisions are currently unable to be edited or deleted. 
+- if you remove all items in the create Decision form you will be sent back to the home screen.
+
+<br>
+
+![appImage](./img-md/magic-eight-ball.png)
+
+<br>
+
+## 📃 License
+
+MIT License
+
+Copyright (c) [2022] [Christina Welch]
